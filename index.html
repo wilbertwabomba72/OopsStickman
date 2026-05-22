@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oops! Stickman</title>
+  <meta name="description" content="Oops! Stickman is a funny offline physics drawing puzzle game built with SpriteKit and Objective-C.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #151515;
+      --blue: #1d7dff;
+      --red: #ff4b4b;
+      --paper: #fbfdff;
+      --line: #d8edf9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--paper);
+      background-size: 44px 44px;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(980px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header {
+      padding: 44px 0 30px;
+      border-bottom: 4px solid var(--ink);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 84px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .tagline {
+      max-width: 680px;
+      margin: 18px 0 0;
+      font-size: 22px;
+      color: #2f3b48;
+    }
+
+    section {
+      padding: 34px 0;
+      border-bottom: 1px solid #cde7f5;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      max-width: 760px;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px 18px;
+      padding: 0;
+      margin: 18px 0 0;
+      list-style: none;
+    }
+
+    li {
+      padding: 12px 14px;
+      border: 2px solid var(--ink);
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 4px 4px 0 var(--blue);
+    }
+
+    .danger {
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    footer {
+      padding-top: 28px;
+      color: #52606d;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Oops! Stickman</h1>
+      <p class="tagline">Draw quick shields, bridges, and barriers to save an unlucky stickman from absurd physics hazards.</p>
+    </header>
+
+    <section aria-labelledby="about">
+      <h2 id="about">About The Game</h2>
+      <p>Oops! Stickman is a single-player offline drawing puzzle game built with SpriteKit and Objective-C. Each level gives you a stickman, a hazard, and a moment to sketch a clever solution before the chaos begins.</p>
+      <p>The game is designed for landscape play, quick retries, readable physics, and funny failure moments.</p>
+    </section>
+
+    <section aria-labelledby="features">
+      <h2 id="features">Features</h2>
+      <ul>
+        <li>Physics-based drawing puzzles</li>
+        <li>One-finger sketch controls</li>
+        <li>50 handcrafted-style generated levels</li>
+        <li>Local progress and star ratings</li>
+        <li>Clean paper-doodle visual style</li>
+        <li>Fully playable offline</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="challenge">
+      <h2 id="challenge">Can You Save Him?</h2>
+      <p>Block falling rocks, redirect flying slippers, bridge dangerous gaps, and keep the stickman alive long enough to win. A tiny line can become the perfect shield, but one bad angle can lead to a very dramatic <span class="danger">OOPS!</span></p>
+    </section>
+
+    <footer>
+      <p>Developer account: hengbozail@163.com</p>
+      <p>Copyright (c) 2026 hengbozail@163.com. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
